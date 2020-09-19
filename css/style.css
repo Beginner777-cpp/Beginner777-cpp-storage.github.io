@@ -1,0 +1,261 @@
+@import '../fonts/stylesheet.css';
+
+/*
+    font-family: 'Roboto-Regular';
+    font-family: 'Raleway-Regular';
+    font-family: 'Raleway-Light';
+    font-family: 'Raleway-Bold';
+    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-Black';
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway-Regular';
+    box-sizing: border-box;
+}
+
+
+/*====================================header==================================*/
+.header{
+    background: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.header_top_logo{
+    color:white;
+    font-family: 'Raleway-Bold';
+    font-size: 24px;
+    display: inline-block;
+    padding:8px 20px;
+    background: #4e9f0d;
+    border:4px solid #62be19;
+    border-radius: 10px;
+}
+.header_top_logo:hover{
+    color:white;
+}
+
+.header_top_list_link{
+    display: inline-block;
+    margin-right: 15px;
+    color:green;
+    padding:35px 10px;
+    transition: 0.5s;
+}
+.header_nav_span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+}
+.header_top_list_link:hover{
+background: rgba(105, 203, 27, 75%);
+color:white;
+text-decoration: none;
+}
+.header_top_list_link:hover .header_nav_span{
+    color:green;
+}
+.header_top{
+    margin-bottom: 150px;
+    margin-right:-16px;
+    margin-left:-16px;
+}
+.header_content{
+    color:#69cf17;
+}
+.header_title{
+    font-family: 'Raleway-Black';
+    font-size: 72px;
+}
+.header_title_bottom{
+    font-family: 'Raleway-Regular';
+    font-size: 36px;
+}
+.header_content_text{
+font-size: 18px;
+    color:white;
+}
+.header_price{
+color:white;
+font-family: 'Raleway-Thin';
+font-size: 60px;
+padding:30px 90px;
+background: rgba(105,207,23,0.75);
+display: inline-block;
+}
+/*===================================/header==================================*/
+
+/*====================================main==================================*/
+.main{
+
+}
+.bar_icon{
+    color:white;
+}
+.nav_link{
+    color:white;
+}
+.nav_link:hover{
+    color:green; 
+}
+.main_top{
+    padding-top:50px;
+    background: black;
+    padding-bottom: 50p;
+}
+.main_top_nav{
+    margin-bottom: 70px;
+background: black;
+color:white;
+}
+
+.main_top_product{
+    margin-right:-15px;
+    margin-left:-15px;
+}
+.main_top_product_item{
+    margin-right:-15px;
+    margin-left: -15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.main_top_product_item_title{
+    font-family: 'Raleway-Bold';
+    font-size: 24px;
+    color:green;
+    margin-top:35px;
+}
+.main_top_product_item_text{
+font-size: 16px;
+color:white;
+}
+.main_product_item_img{
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.burger_img{
+    width:100%;
+    height:100%;
+    
+}
+.main_product_item_img .hidden{
+    transition: 0.5s;
+}
+.main_top_item_price{
+    display: inline-block;
+    font-size: 24px;
+    color:white;
+    background: rgba(105,207,23,0.75);
+    padding:20px 60px;
+    position: absolute;
+    top:78%;
+    left:0;
+}
+.hidden{
+position: absolute;
+width:100%;
+height:100%;
+background: rgba(105,207,23,0.75);
+top:100%;
+left:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Raleway-Bold';
+font-size: 24px;
+color:white;
+}
+.main_product_item_img:hover .hidden{
+    top:0;
+    left:0;
+}
+.main_product_item_img:hover .main_top_item_price{
+    top:100%;
+    left:0;
+}
+
+.main_recipe{
+background: url(../img/section_bg.png);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main_recipe_title{
+    font-family: 'Raleway-Bold';
+    font-size: 36px;
+    color:#69cf17;
+    text-align: center;
+    padding-top: 50px;
+}
+.line{
+width:200px;
+height:1px;
+background: green;
+margin:0 auto;
+margin-bottom: 50px;
+margin-top:20px;
+}
+.main_recipe_text{
+    font-size: 18px;
+    color:white;
+    padding-bottom: 35px;
+}
+
+.main_bottom{
+display: flex;
+flex-direction: column;
+}
+.main_bottom_title{
+    font-family: 'Raleway-Bold';
+    font-size: 36px;
+    color:#69cf17;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top:50px;
+}
+.map{
+    width:100%;
+    min-height: 500px;
+    flex-grow: 1;
+}
+/*===================================/main==================================*/
+
+/*====================================footer==================================*/
+.footer{
+    background: black;
+    padding-top:40px;
+}
+.footer_top{
+    margin-bottom: 50px;
+}
+.footer_top_number{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color:#4e9f0d;
+    font-size: 24px;
+}
+.footer_bottom_text{
+    text-align: center;
+    color:white;
+    font-family: 'Raleway-Thin';
+    font-size: 16px;
+    padding-bottom: 47px;
+    margin-top:40px;
+}
+.footer_top_nav{
+display: flex;
+justify-content: center;
+}
+/*===================================/footer==================================*/
